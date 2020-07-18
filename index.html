@@ -21,18 +21,31 @@
             <div class="col-md-6">
                 <form>
                     <div>
-                        <h1><strong>Fill the form below to know your 'Akan name'.</strong></h1>
-                        <label>Enter Your First Name.</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter our First Name" required>
-                        <label>Enter Your Date of birth.</label>
-                        <input type="date" class="form-control" id="Dob" placeholder=" Enter your date of Birth">
-                        <label>Gender</label> <br>
-                        <input type="radio" classname="gender" id="male" value="male" checked> Male 
-                        <input type="radio" name="gender" id="male" value="male"> Female <br>
-                        <a onclick="submission()" class="btn btn-outline-info btn-lg">Submit</a>
-                        <button type="reset" class="btn btn-outline-info btn-lg">Reset</button>
-
+                        <div>
+                                <p id="output"></p>
+                            <label>Enter Your first Name.</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter" required>
+                            <label>Year</label>
+                            <input type="number" class="form-control" id="year" placeholder="Enter the year." required
+                                min="1900" max="2009" >
+                            <label>Month</label>
+                            <input type="number" class="form-control" id="month" placeholder="Enter the month" required min="1"
+                                max="12">
+        
+                            <label>Day</label>
+                            <input type="number" class="form-control" id="day" placeholder="Enter the day" required min="1"
+                                max="31">
+                        </div>
+                        <div class="ggg">
+                            <label>Gender</label><br>
+                            <input type="radio" name="gender" id="male" value="male" checked> Male
+                            <input type="radio" name="gender" id="female" value="female"> Female
+                        </div>
                     </div>
+                    <a onclick="submission()" class="btn btn-outline-info btn-lg">Submit</a>
+                    
+                    <button type="reset" class="btn btn-outline-info btn-lg">Reset</button>
+                
 
 
 
@@ -51,10 +64,11 @@
     
 
 
-<div class="footer">
+
+    <div class="footer">
     <footer>&copy; 2020 Victor Fereiti Mirgichan All Rights Reserved.</footer>
-</div>
-    <script src="script.js"></script>
-    <script src="bootstrap.min.js"></script>
+ </div>
+ <script src="script.js"></script>
+
 </body>
 </html>
