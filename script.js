@@ -47,11 +47,11 @@ let submission = function() {
   //    alert("No Input received!!");
   //  }
   
-    if(male.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
+    if(male.checked && year > 0 && month > 0 && month <= 12 && day > 0 && day < 32) {
       output.style.background ="lime"
         output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results]+ ". Is your new name amazing?";
     }
-     else if(female.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
+     else if(female.checked && year > 0 && month > 0 && month <=12 && day > 0 && day < 32) {
       output.style.background ="pink"
       output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results]+ ". Is your new name amazing?";
   }
