@@ -9,7 +9,7 @@
 
 ### project setup instruction: The website will require a user to fill out information about his/her date of birth, choose his gender and then click on the submit button. The application calculates the day of the week the user was born and output their Akan name.
 
-![]Screenshot001.png, Screenshot002.png, Screenshot003.png
+![](Screenshot001.png, Screenshot002.png, Screenshot003.png)
 
 
 
