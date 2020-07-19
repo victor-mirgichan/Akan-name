@@ -3,6 +3,7 @@ body {
     padding-top: 60px;
     padding-left: 54px;
     background-color: goldenrod !important;
+    width: 100%!important;
 }
 
 .footer {
@@ -10,14 +11,19 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: salmon;
-    color: white;
+    background-color: khaki;
+    color: black;
     text-align: center;
+    line-height: 80px;
+    width: 1300px;
 };
 p {
     color:maroon!important;
     font-style: italic;
     text-align: center;
     font-family: sans-serif;
-    line-height: normal;
-}
+    
+};
+.mainform{
+    background-color: lightgoldenrodyellow !important;
+};
