@@ -1,31 +1,7 @@
-var submission = function() {
-    var daysOfTheWeek = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-    ];
-    var maleNames = [
-      "Kwasi",
-      "Kwadwo",
-      "Kwabena",
-      "Kwaku",
-      "Yaw",
-      "Kofi",
-      "Kwame"
-    ];
-    var femaleNames = [
-      "Akosua",
-       " Adwoa",
-      "Abenaa",
-      "Akua",
-      "Yaa",
-      "Afua",
-      "Ama"
-    ];
+let submission = function() {
+    let daysOfTheWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    let maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    let femaleNames = ["Akosua"," Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
     var month = parseInt(document.getElementById("month").value);
     var year = parseInt(document.getElementById("year").value);
     var day = parseInt(document.getElementById("day").value);
@@ -47,23 +23,23 @@ var submission = function() {
   //   }
   // }
     
-    
-   if (year < 0) {
+   if ((year< 0) || (year > 2020)){
+
       output.style.background ="red"
       output.style.color= "white"
       output.innerHTML = "Hey! " + name + " please enter a valid year! "
   }
     
   else if ((month < 1) || (month > 31)) {
-      output.style.background ="red"
-      output.style.color= "white"
+     output.style.background="red"
+     output.style.color="black"
       output.innerHTML = "Hey! " + name + " please enter a valid month! "
   }
     
    else if (day < 0 || day > 31) {
-      output.style.background ="red"
-      output.style.color= "white"
-      output.innerHTML = "Hey! " + name + " please enter a valid day! "
+    output.style.background="red"
+    output.style.color="black"  
+    output.innerHTML = "Hey! " + name + " please enter a valid day! "
   }
   //  var valid = (year>0 && (month > 0 && month <= 12) (day > 0 && day <32))
    
@@ -73,12 +49,11 @@ var submission = function() {
   
     if(male.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
       output.style.background ="lime"
-        output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results];
+        output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results]+ " is your new name amazing?";
     }
      else if(female.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
-      output.style.background ="lime"
-      output.style.background ="red"
-      output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
+      output.style.background ="pink"
+      output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results]+ " is your new name amazing?";
   }
   
   };
