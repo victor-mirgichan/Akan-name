@@ -12,12 +12,16 @@ body {
     bottom: 0;
     width: 100%;
     background-color: khaki;
-    color: black;
+    color: gray;
     text-align: center;
     line-height: 50px;
     width: 1300px;
+    font-style: italic
 };
 
 .mainform{
     background-color: lightgoldenrodyellow !important;
+};
+h2{
+    font-family: sans-serif;
 };
