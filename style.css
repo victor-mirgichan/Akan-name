@@ -17,13 +17,7 @@ body {
     line-height: 80px;
     width: 1300px;
 };
-p {
-    color:maroon!important;
-    font-style: italic;
-    text-align: center;
-    font-family: sans-serif;
-    
-};
+
 .mainform{
     background-color: lightgoldenrodyellow !important;
 };
